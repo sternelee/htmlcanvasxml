@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blob图片解析出来</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    function ab2str(buf){
+    	return String.fromCharCode.apply(null, new Uint8Array(buf));
+    }
+    // ArrayBuffer对象 转字符串
+    function str2ab(str){
+    	var buf = new ArrayBuffer(str.length);
+    	var bufView = new Uint8Array(buf);
+    	for(var i = 0, strLen = str.length; i < strLen; i++){
+    		bufView[i] = str.charCodeAt(i);
+    	}
+    	return buf;
+    }
+    // 字符串转 ArrayBuffer对象
+
+    var _appendBuffer = function(buffer1, buffer2) {
+        var tmp = new Uint8Array(buffer1.byteLength + buffer2.byteLength);
+        tmp.set(new Uint8Array(buffer1), 0);
+        tmp.set(new Uint8Array(buffer2), buffer1.byteLength);
+        return tmp.buffer;
+    };
+    // 合并 arraybuffer
+    var picBuf = {};
+    window.onload = function() {
+        window.URL = window.URL || window.webkitURL;
+        var imgSrc = "images/head_kv/background.jpg";
+        // console.log(str2ab(imgSrc));
+        var strAb = str2ab(imgSrc);
+        var strRes = new DataView(strAb);
+        // console.log(strRes);
+        picBuf.strLen = strAb.byteLength;
+        picBuf.str = strAb;
+        var s = 0;
+        // while(s < strRes.byteLength){
+        //     var l = strRes.getUint8(s, !1);
+        //     s += 1;
+        //     console.log(String.fromCharCode(l));
+        // }
+        // console.log(ab2str(strAb));
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", imgSrc, true);
+        xhr.responseType = "arraybuffer";
+        var bu = function(t) {
+            if (this.status == 200) {
+                var n = t.currentTarget,
+                    r = n.response,
+                    i = new DataView(r);
+                    picBuf.viewLen = r.byteLength;
+                    picBuf.view = r;
+                    var picBuffer = new ArrayBuffer(picBuf.strLen + 1 + picBuf.viewLen + 1);
+                    var picDataView = new DataView(picBuffer);
+                    var m = 0;
+                    picDataView.setUint8(m,picBuf.strLen);
+                    m += 1;
+                    var c = "";
+                    var o = 0;
+                    while(o < strRes.byteLength){
+                        var l = strRes.getUint8(o, !1);
+                        picDataView.setUint8(m,l);
+                        m += 1;
+                        o += 1;
+                    }
+                    picDataView.setUint8(m,picBuf.viewLen);
+                    var p = 0;
+                    var q = m;
+                    while(p <  i.byteLength){
+                        var l = i.getUint8(p, !1);
+                        picDataView.setUint8(m,l);
+                        p += 1;
+                        m += 1;
+                    }
+                    var v = new Uint8Array(picBuffer,q,i.byteLength);
+
+                    var img = document.createElement("img");
+                    img.onload = function(e){
+                        window.URL.revokeObjectURL(img.src);
+                    };
+                    var cc = "";
+                    for(var i = 0; i < picBuf.strLen; i++){
+                        var l = picDataView.getUint8(i+1,!0);
+                        cc += String.fromCharCode(l);
+                    }
+                    console.log(picDataView.getUint8(0,!1));
+                    img.src = window.URL.createObjectURL(new Blob([v]));
+                    img.alt = cc;
+                    document.body.appendChild(img);
+            }     
+        };
+        xhr.onload = bu;
+        // document.body.appendChild(img);
+     
+        xhr.send();
+    }
+    </script>
+</body>
+
+</html>

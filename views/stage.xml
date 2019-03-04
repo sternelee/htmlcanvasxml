@@ -1,0 +1,169 @@
+<stage name="pepsi" width="640" height="1008" align="TOP_LEFT" scale-mode="noScale" bg-color="#FFFFFF">
+  <asset>axe|assets/6.png</asset>
+  <table name="page_box" width="640" height="1008"/>
+  <container name="cell_views" width="640" height="1008">
+    <container name="top" width="640" height="1236">
+      <text x="30" y="23" width="430" height="45" color="#000000" font="Heiti SC,ST Heiti,Arial" size="48" text-align="left" text-v-align="middle">如何学会像</text>
+      <text x="30" y="93" width="430" height="45" color="#000000" font="Heiti SC,ST Heiti,Arial" size="48" text-align="left" text-v-align="middle">杰伦那英汪峰哈林那样K歌？</text>
+      <text x="30" y="174" width="167" height="42" color="#8d8d8d" font="Helvetica Neue,Helvetica,Arial" size="32" text-align="left" text-v-align="middle">2015-07-31</text>
+      <button name="btn_creator" x="212" y="174" width="352" height="36">
+        <text name="normal" width="352" height="36" color="#7a89b0" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">中国好声音研究中心</text>
+        <text name="click" width="352" height="36" color="#285483" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">中国好声音研究中心</text>
+      </button>
+      <text x="30" y="265" width="580" height="125" color="#e02626" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[由于该文章被K友疯狂传阅,导致服务器偶尔加载缓慢。耐心等待,必有后福。]]></text>
+      <text x="30" y="405" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">好声音靠天赋？靠苦练？</text>
+      <text x="30" y="460" width="580" height="130" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[认为唱歌好听只是天赋的家伙，这篇文章对你应该没啥用。每周五准时收看《中国好声音》，这辈子老老实实做个好听众就圆满了。]]></text>
+      <text x="30" y="620" width="580" height="180" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[但，如果认同好声音是需苦练而成的功夫，那不妨花个几分钟，从数据洞察和技术剖析的角度，学学四大导师怎样唱出好声音。]]></text>
+      <text x="30" y="860" width="580" height="30" color="#424242" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[全国KTV数据普查，四大“麦渣”你见过吗？]]></text>
+      <text x="30" y="920" width="580" height="230" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[学不会互联网思维，至少学会看懂互联网数据。小编托关系，特地从大众点评网内部得到一份绝密资料，曝光大量未公开数据。以大众点评全国82,684家在线KTV商户为样本，统计出KTV里常见的那些唱不好歌的“麦渣”，都是什么德性：]]></text>
+    </container>
+    <container name="head" width="640" height="849">
+      <container name="motion_box" x="30" y="0" width="580" height="742" bg-color="#b5fae8">
+        <movie x="270" y="293" width="39" height="39" fps="20">
+          <frame>images/loading/motion_[00000-00011].png</frame>
+        </movie>
+        <bitmap x="109" y="357" src="images/loading/loading_text/01.png"/>
+      </container>
+      <text x="30" y="751" width="580" height="30" color="#9f9f9f" font="Heiti SC,ST Heiti,Arial" size="26" text-align="center" text-v-align="middle"><![CDATA[上面四类“麦渣”符号都可以点哦。]]></text>
+    </container>
+    <container name="text" width="640" height="1370">
+      <text x="30" y="0" width="580" height="80" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[麦渣No.1: 烂尾舌<br/>占麦渣总数31.61%]]></text>
+      <text x="30" y="110" width="580" height="130" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[特征：这类麦渣最多，专爱挑战超快RAP，第一句还有模有样，但之后永远比字幕慢5拍。就像一条追着车跑的疯狗，没人听得懂他在瞎嚎什么。]]></text>
+      <text x="30" y="300" width="580" height="80" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[麦渣No.2: 前泪腺<br/>占麦渣总数21.84%]]></text>
+      <text x="30" y="410" width="580" height="130" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[特征：泪频泪急泪不尽，苦情歌刚唱一句自己先泣不成声。而其他人见状最多停顿2秒，然后继续声嘶力竭“9个6！”“6你先人！开！”]]></text>
+      <text x="30" y="600" width="580" height="80" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[麦渣No.3: 破天喉<br/>占麦渣总数20.11%]]></text>
+      <text x="30" y="710" width="580" height="130" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[特征：一到高音就站成人形巴黎铁塔，架势有板有眼，却嘶吼出如指甲刮黑板般钻心的破音。趁间奏还一定嘀咕一句“咦？这个版本好像音高了半度。”]]></text>
+      <text x="30" y="900" width="580" height="80" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[麦渣No.4: 贱骨头<br/>占麦渣总数18.79%]]></text>
+      <text x="30" y="1010" width="580" height="130" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[特征：一唱动感歌曲，身体就不受控地乱摇乱动，但气又接不过来，整首歌都像在打哈欠，好像肺里破了个洞，让人恨不得伸手进去帮他堵上。]]></text>
+      <text x="30" y="1200" width="580" height="80" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[所以说，“笨舌”、“泪腺”、“破喉”、“贱骨”<br/>是麦渣们唱不好歌，最关键的四大痛疾。]]></text>
+      <bitmap x="32" y="1369" src="images/gray_line.jpg"/>
+    </container>
+    <container name="text" width="640" height="934">
+      <text x="30" y="92" width="580" height="80" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[逆天科技首度公开<br/>“剖”析四大导师发声绝技]]></text>
+      <text x="30" y="212" width="580" height="580" color="#424242" font="Heiti SC,ST Heiti,Arial" size="25" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[据1993年出版的《人体解剖学试验图例》考证，<br/>舌头、泪腺、喉咙、骨骼等部位与我们发出的声音息息相关。<br/>而在这份内部绝密资料中，也首次披露了相应的逆天技术，全称为：3D人体发声内窥技术（3-DIMENSION<br/>HUMAN VOICE ENDOSCOPY TECHNOLOGY，国际简称“3D.H.V.E.T.”）<br/>本材料也是利用3D.H.V.E.T对照四大导师的现场演唱，<br/>内窥分析出他们各自身体特殊部位所关联的发声绝技。<br/>废话不多说，马上为你逐一内窥剖析四大导师的好声音秘籍：<br/>注：以下数据皆来自：]]></text>
+      <text x="30" y="792" width="580" height="50" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">大众点评网全国在线KTV商户统计。</text>
+    </container>
+    <container name="jay" width="640" height="1050">
+      <text x="30" y="0" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">好声音导师：周杰伦</text>
+      <text x="30" y="50" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">发声绝技：响尾舌</text>
+      <text x="30" y="100" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">绝杀点：越快越清楚</text>
+      <text x="30" y="150" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">全国KTV每周平均点唱数：7,294,821次</text>
+      <container name="motion_box" x="30" y="256" width="580" height="671" bg-color="#b5fae8">
+        <movie x="270" y="257" width="39" height="39" fps="20">
+          <frame>images/loading/motion_[00000-00011].png</frame>
+        </movie>
+        <bitmap x="109" y="321" src="images/loading/loading_text/02.png"/>
+      </container>
+      <text x="30" y="944" width="580" height="30" color="#9f9f9f" font="Heiti SC,ST Heiti,Arial" size="26" text-align="center" text-v-align="middle"><![CDATA[点击“START”,看杰伦老师如何唱清楚快歌。]]></text>
+    </container>
+    <container name="text" width="640" height="700">
+      <text x="30" y="0" width="580" height="700" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[下任国民岳父周董，首秀好声音便燃起一代人的青春追忆。<br/>周董曾以《双节棍》中19秒114字快而不乱的反人类RAP，奠定歌坛“快男”地位。<br/>这都归功于他那根快舌。<br/>众所周知，舌头负责构成语言音节。<br/>舌头越快，吐字越快。<br/>而据专家测算，周董舌头震动极限频率，可达每秒34—51次。已接近响尾蛇攻击状态下，尾部每秒40—60次的震频级别。<br/>所以毫不夸张地讲，如果在周董舌头上绑上个沙球，<br/>孤身穿越原始丛林，边走边唱《双截棍》，绝无野兽敢冒死近身半步。]]></text>
+    </container>
+    <container name="naying" width="640" height="1050">
+      <text x="30" y="0" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">好声音导师：那英</text>
+      <text x="30" y="50" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">发声绝技：锁泪肌</text>
+      <text x="30" y="100" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">绝杀点：我不哭你哭</text>
+      <text x="30" y="150" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">全国KTV每周平均点唱数：5,823,629次</text>
+      <container name="motion_box" x="30" y="256" width="580" height="671" bg-color="#b5fae8">
+        <movie x="270" y="257" width="39" height="39" fps="20">
+          <frame>images/loading/motion_[00000-00011].png</frame>
+        </movie>
+        <bitmap x="109" y="321" src="images/loading/loading_text/03.png"/>
+      </container>
+      <text x="30" y="944" width="580" height="30" color="#9f9f9f" font="Heiti SC,ST Heiti,Arial" size="26" text-align="center" text-v-align="middle"><![CDATA[点击“START”,看那英老师如何把别人唱哭。]]></text>
+    </container>
+    <container name="text" width="640" height="550">
+      <text x="30" y="0" width="580" height="550" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[多年来，那姐几乎唱尽失足少妇的苦难悲情。<br/>但哪怕唱哭全世界，她演唱时也从不流泪。<br/>并非繁华看尽，心如止水。<br/>而是那姐的眼周肌群可如水闸般锁紧泪水。<br/>中医古经有云“五脏六腑之精，皆上注于目”。<br/>泪渗一滴，气泄千里，声音如何催魂泪下？<br/>而那姐演唱时，将泪水锁在泪腺肌下，贴近鼻腔的表皮中。泪水持续增加共振的立体感，让歌声回荡着悲悯感怀。<br/>所以她一唱，你只能哭。]]></text>
+    </container>
+    <container name="wangfeng" width="640" height="1050">
+      <text x="30" y="0" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">好声音导师：汪峰</text>
+      <text x="30" y="50" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">发声绝技：拳击喉</text>
+      <text x="30" y="100" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">绝杀点：高音冲不破</text>
+      <text x="30" y="150" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">全国KTV每周平均点唱数：5,022,340次</text>
+      <container name="motion_box" x="30" y="256" width="580" height="671" bg-color="#b5fae8">
+        <movie x="270" y="257" width="39" height="39" fps="20">
+          <frame>images/loading/motion_[00000-00011].png</frame>
+        </movie>
+        <bitmap x="109" y="321" src="images/loading/loading_text/04.png"/>
+      </container>
+      <text x="30" y="944" width="580" height="30" color="#9f9f9f" font="Heiti SC,ST Heiti,Arial" size="26" text-align="center" text-v-align="middle"><![CDATA[点击“START”,看汪峰老师如何飙高音不破音。]]></text>
+    </container>
+    <container name="text" width="640" height="600">
+      <text x="30" y="0" width="580" height="600" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[拳击手一拳的冲击力，相当一头公牛的撞击。<br/>只有抗击打能力拔群，才能下台后依然直立行走。<br/>而以狂怒高音著称的汪峰，其绝技也是如此：<br/>在我们喉部有个水滴状小器官，学名“悬雍垂”。<br/>飚高音时，气流从胸腔猛烈上冲，相当于拳手以每分钟800次的速度击打悬雍垂。<br/>此时普通人喉部会产生剧烈灼痛，从而放弃。<br/>而峰哥的悬雍垂早已锤炼成钢，足以承受这种变态的冲击频率。<br/>这就是为什么3小时的演唱会，你在台下已经嘶哑了喉咙，而汪峰的歌声继续越飞越高。]]></text>
+    </container>
+    <container name="harlern" width="640" height="1050">
+      <text x="30" y="0" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">好声音导师：庾澄庆</text>
+      <text x="30" y="50" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">发声绝技：摇摆骨</text>
+      <text x="30" y="100" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">绝杀点：骨动皮不动</text>
+      <text x="30" y="150" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">全国KTV每周平均点唱数：5,010,238次</text>
+      <container name="motion_box" x="30" y="256" width="580" height="671" bg-color="#b5fae8">
+        <movie x="270" y="257" width="39" height="39" fps="20">
+          <frame>images/loading/motion_[00000-00011].png</frame>
+        </movie>
+        <bitmap x="109" y="321" src="images/loading/loading_text/05.png"/>
+      </container>
+      <text x="30" y="944" width="580" height="30" color="#9f9f9f" font="Heiti SC,ST Heiti,Arial" size="26" text-align="center" text-v-align="middle"><![CDATA[点击“START”,看哈林老师如何唱得更动感。]]></text>
+    </container>
+    <container name="text" width="640" height="768">
+      <text x="30" y="0" width="580" height="768" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[一般人唱歌时，以骨骼带动皮肤、肌肉一起乱摇。<br/>而哈林老师却只有骨骼摇摆，皮肉与之脱离，外形上依然泰然自若。<br/>并且这种摇摆不能“乱摇”，而是“有目的地摇”：<br/>据德国造车业气流研究表明：气流摇摆时，会顺势形成震荡波形。当气流输出，便自带节奏、韵律。<br/>哈林演唱时，看似站定不动，其实皮囊下的骨骼早已像卖场门口的人形充气立柱般狂摇不止，带动体腔内气流一起回荡。（经常在节假日去大型超市里抢购打折商品的朋友一定对这类狂舞的巨型充气魔偶不会陌生。）<br/>所以哈林老师的歌声，除了旋律和歌词，比常人更多一重维度：气流韵律。<br/>自然让听者心欲静，而身不止，不由地随歌起舞。]]></text>
+      <bitmap x="32" y="767" src="images/gray_line.jpg"/>
+    </container>
+    <container name="text" width="640" height="998">
+      <text x="30" y="84" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">导师绝技非一日之功</text>
+      <text x="30" y="134" width="580" height="25" color="#000000" font="Heiti SC,ST Heiti,Arial" style="bold" size="26" text-align="left" text-v-align="middle">大众点评助麦渣练声</text>
+      <text x="30" y="234" width="580" height="230" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[如绝密资料中所述，四位导师，四种内功绝技，<br/>看似超越常理，却又遵循常识。只要抓住要害，每个人都能唱好歌。<br/>而四大导师之所以成功，<br/>只不过比麦渣花了更多时间练习而已。]]></text>
+      <text x="30" y="534" width="580" height="230" color="#f39700" style="bold" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[因此，“大众点评网”为替广大K友争取更多练歌时间，将内部资料中的数据分析，转化成拯救麦渣的优惠实策，并在82,684家在线KTV商户资源中，成立“好声音练歌专区”。练歌券最低只需9元，让所有人花最少的钱，练最久的歌。]]></text>
+      <text x="30" y="834" width="580" height="80" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[现在，即使是陈年老麦渣，也终于可以练成自己的终极好声音。]]></text>
+    </container>
+    <container name="bottom" width="640" height="960">
+      <container name="motion_box" x="30" y="0" width="580" height="796" bg-color="#b5fae8">
+        <movie x="270" y="320" width="39" height="39" fps="20">
+          <frame>images/loading/motion_[00000-00011].png</frame>
+        </movie>
+        <bitmap x="109" y="384" src="images/loading/loading_text/06.png"/>
+      </container>
+      <text x="30" y="850" width="580" height="30" color="#9f9f9f" font="Heiti SC,ST Heiti,Arial" size="26" text-align="center" text-v-align="middle"><![CDATA[有种点一下好声音标志,听麦渣终极变声全过程。]]></text>
+      <bitmap x="32" y="959" src="images/gray_line.jpg"/>
+    </container>
+    <container name="text" width="640" height="1216">
+      <text x="30" y="91" width="580" height="230" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50"><![CDATA[最后，仁至义尽的小编我还能教你最后一招：<br/>“拍下‘I WANT YOU’按钮”<br/>就直接进入大众点评网KTV“好声音练歌专区”，获得独家KTV优惠练歌券。<br/>麦渣与导师的声音鸿沟，只隔着一个按钮的距离。]]></text>
+      <text x="30" y="371" width="580" height="180" color="#424242" font="Heiti SC,ST Heiti,Arial" size="26" text-align="left" text-v-align="middle" word-wrap="true" line-height="50" merge-last-line="1"><![CDATA[刚看完《好声音》的你，与其隔空赞叹别人，不如与朋友们分享这个按钮，去KTV操练自己的好声音！<br/>对了，你也可以试着“点击原文”，我等着听你的尖叫。]]></text>
+      <movie name="btn_want" x="278" y="794" width="84" height="133" fps="20">
+        <frame>images/footer/motion_[00000-00003].jpg</frame>
+      </movie>
+      <button name="btn_source" x="29" y="1141" width="128" height="36">
+        <text name="normal" width="128" height="36" color="#6e95be" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">阅读原文</text>
+        <text name="click" width="128" height="36" color="#285483" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">阅读原文</text>
+      </button>
+      <text x="177" y="1141" width="64" height="36" color="#8d8d8d" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">阅读</text>
+      <text name="txt_pv" x="250" y="1141" width="100" height="36" color="#8d8d8d" font="Helvetica Neue,Helvetica,Arial" size="32" text-align="left" text-v-align="middle">448</text>
+      <button name="btn_like" x="401" y="1137" width="44" height="45">
+        <bitmap name="normal" src="images/like/normal.png"/>
+        <bitmap name="click" src="images/like/click.png"/>
+      </button>
+      <text name="txt_like" x="441" y="1141" width="100" height="36" color="#8d8d8d" font="Helvetica Neue,Helvetica,Arial" size="32" text-align="left" text-v-align="middle">6</text>
+      <motion name="btn_report" x="545" y="1141" width="64" height="36" duration="0.46" auto-play="false" loop="false">
+        <layer>
+          <content>
+            <button x="545" y="941" width="64" height="36">
+              <text name="normal" width="64" height="36" color="#8d8d8d" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">举报</text>
+              <text name="click" width="64" height="36" color="#6e95be" font="Heiti SC,ST Heiti,Arial" size="32" text-align="left" text-v-align="middle">举报</text>
+            </button>
+          </content>
+          <frame time="0" tween="Linear.easeNone"/>
+          <frame time="0.041666666666666664" matrix="1,0,0,1,0,0" tween="Linear.easeNone"/>
+          <frame time="0.08333333333333333" matrix="0.9910125732421875,-0.130523681640625,0.130523681640625,0.9910125732421875,-6.45,-25.45" tween="Linear.easeNone"/>
+          <frame time="0.125" matrix="0.9659271240234375,-0.2556610107421875,0.2556610107421875,0.9659271240234375,-29.6,-43.25" tween="Linear.easeNone"/>
+          <frame time="0.16666666666666666" matrix="0.9226226806640625,-0.3826904296875,0.3826904296875,0.9226226806640625,-58.9,-49.9" tween="Linear.easeNone"/>
+          <frame time="0.20833333333333334" matrix="0.86602783203125,-0.497161865234375,0.497161865234375,0.86602783203125,-87.75,-36.7" tween="Linear.easeNone"/>
+          <frame time="0.25" matrix="0.7933502197265625,-0.6061553955078125,0.6061553955078125,0.7933502197265625,-106.05,-5.5" tween="Linear.easeNone"/>
+          <frame time="0.2916666666666667" matrix="0.70477294921875,-0.70709228515625,0.70709228515625,0.70477294921875,-116,28.95" tween="Linear.easeNone"/>
+          <frame time="0.3333333333333333" matrix="0.6087493896484375,-0.7913360595703125,0.7913360595703125,0.6087493896484375,-121.65,63.35" tween="Linear.easeNone"/>
+          <frame time="0.375" matrix="0.5,-0.8643646240234375,0.8643646240234375,0.5,-123.65,97.95" tween="Linear.easeNone"/>
+          <frame time="0.4166666666666667" matrix="0.3826904296875,-0.922607421875,0.922607421875,0.3826904296875,-124.8,132.1" tween="Linear.easeNone"/>
+          <frame time="0.4583333333333333" matrix="0.258819580078125,-0.965911865234375,0.965911865234375,0.258819580078125,-125.5,165.95"/>
+        </layer>
+      </motion>
+    </container>
+  </container>
+</stage>

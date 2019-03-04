@@ -1,0 +1,15 @@
+<container name="bottom" width="580" height="796" bg-color="#FFFFFF">
+  <asset>axe|assets/1.png</asset>
+  <bitmap x="41" y="0" src="images/bottom/background.jpg"/>
+  <movie name="stars" x="51" y="73" width="478" height="111" loop="false" auto-play="false">
+    <frame>images/bottom/stars/motion_[00000-0009].jpg</frame>
+    <frame repeat="16">images/bottom/stars/motion_[00010-00029].jpg</frame>
+    <frame reverse="reverse">images/bottom/stars/motion_[00000-00029].jpg</frame>
+  </movie>
+  <movie name="voc" x="-30" y="184" width="640" height="612" loop="false">
+    <frame>images/bottom/voc/motion_[00000-00014].png</frame>
+    <frame>images/bottom/voc/motion_[00015-00084].png</frame>
+    <frame repeat="15">images/bottom/voc/motion_[00085-00099].png</frame>
+    <frame reverse="reverse">images/bottom/voc/motion_[00015-00099].png</frame>
+  </movie>
+</container>

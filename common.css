@@ -1,0 +1,50 @@
+html
+{
+    -ms-touch-action: none;
+    overflow: hidden;
+}
+
+body
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    overflow: hidden;
+    background:#FFF;
+    background-size: 100% 100%;
+    font-family: 'SimSun','宋体','Arial','Verdana','Helvetica','SANS-SERIF',serif;
+}
+
+canvas
+{
+    display:block;
+    position:absolute;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+img.share
+{
+    width: 0;
+    height: 0;
+}
+
+input.txt_fps
+{
+    background: #CCCCCC;
+    color: #000;
+    display: block;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 0;
+}

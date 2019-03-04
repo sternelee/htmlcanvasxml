@@ -1,0 +1,37 @@
+<container name="head" width="580" height="742">
+  <asset>axe|assets/3.png</asset>
+  <bitmap src="images/head_kv/background.jpg"/>
+  <container name="motion_box" x="-30" y="16" width="640" height="541">
+    <movie name="mc_def" width="640" height="541" fps="20">
+      <frame>images/head_kv/motions/default/motion_[00000-00028].png</frame>
+    </movie>
+    <movie name="mc_1" width="640" height="541" fps="20">
+      <frame>images/head_kv/motions/1/motion_[00000-00020].png</frame>
+    </movie>
+    <movie name="mc_2" width="640" height="541" fps="20">
+      <frame>images/head_kv/motions/2/motion_[00000-00020].png</frame>
+    </movie>
+    <movie name="mc_3" width="640" height="541" fps="20">
+      <frame>images/head_kv/motions/3/motion_[00000-00020].png</frame>
+    </movie>
+    <movie name="mc_4" width="640" height="541" fps="20">
+      <frame>images/head_kv/motions/4/motion_[00000-00020].png</frame>
+    </movie>
+  </container>
+  <button name="btn_1" x="19" y="566" width="128" height="153">
+    <bitmap name="normal" src="images/head_kv/btn_1/normal.png"/>
+    <bitmap name="click" src="images/head_kv/btn_1/click.png"/>
+  </button>
+  <button name="btn_2" x="155" y="566" width="128" height="153">
+    <bitmap name="normal" src="images/head_kv/btn_2/normal.png"/>
+    <bitmap name="click" src="images/head_kv/btn_2/click.png"/>
+  </button>
+  <button name="btn_3" x="291" y="566" width="128" height="153">
+    <bitmap name="normal" src="images/head_kv/btn_3/normal.png"/>
+    <bitmap name="click" src="images/head_kv/btn_3/click.png"/>
+  </button>
+  <button name="btn_4" x="428" y="566" width="128" height="153">
+    <bitmap name="normal" src="images/head_kv/btn_4/normal.png"/>
+    <bitmap name="click" src="images/head_kv/btn_4/click.png"/>
+  </button>
+</container>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blob图片解析出来</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    // 图片名称 长度与字符串 保存，返回 arraybuffer
+    function pic2buf(pic){
+        var l = pic.length,
+            a = new ArrayBuffer(l * 4 + 4),
+            d = new DataView(a),
+            t = d.byteLength;
+        var m = 0;
+        d.setUint32(0,l,!1);
+        m += 4;
+        for(var i = 0; i < l; i++){
+            var c = pic.charCodeAt(i);
+            d.setUint32(m,c,!1);
+            m += 4;
+        }
+        return a;
+    }
+    function picab2buf(pic,response){
+        var l = pic.length,
+            v = new Uint8Array(response),
+            q = v.length,
+            a = new ArrayBuffer(l * 4 + 4 + 4 + q),
+            d = new DataView(a),
+            t = d.byteLength;
+        var m = 0;
+        d.setUint32(0,l,!1);
+        m += 4;
+        for(var i = 0; i < l; i++){
+            var c = pic.charCodeAt(i);
+            d.setUint32(m,c,!1);
+            m += 4;
+        }
+        d.setUint32(m,q,!1);
+        m += 4;
+        for(var j = 0; j < q; j++){
+            d.setUint8(m,v[j],!1);
+            m += 1;
+        }
+        console.log(a);
+        return a;
+    }
+
+    // 从 arraybuffer 中提取图片名称
+    function buf2pic(buf){
+        var v = new DataView(buf);
+        var s = 0;
+        var o = [];
+        while(s < v.byteLength){
+            var l = v.getUint32(s,!1);
+            s += 4;
+            var c = "";
+            for(var h = 0; h < l; h++){
+                var p = v.getUint32(s,!1);
+                s += 4,
+                c += String.fromCharCode(p);
+            }
+            o.push(c);
+        }
+        return o;
+    }
+
+    function bufab2pic(buf){
+        var v = new DataView(buf);
+        var s = 0;
+        var o = [];
+        var f = [];
+        while(s < v.byteLength){
+            var l = v.getUint32(s,!1);
+            s += 4;
+            var c = "";
+            for(var h = 0; h < l; h++){
+                var p = v.getUint32(s,!1);
+                s += 4,
+                c += String.fromCharCode(p);
+            }
+            o.push(c);
+            var d = v.getUint32(s, !1);
+            s += 4;
+            var u = new Uint8Array(buf, s, d);
+            s += d;
+            f.push(u);
+        }
+        return {o,f};
+    }
+    
+    window.onload = function(){
+        var pics = "images/head_kv/背景图.jpg";
+        var picsAbuf = pic2buf(pics);
+        var na = buf2pic(picsAbuf);
+        // console.log(na);
+        var bufs = [];
+        URL = URL = window.URL || window.webkitURL;
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", pics, true);
+        xhr.responseType = "arraybuffer";
+        xhr.onload = function(t){
+            if (this.status == 200) {
+                var n = t.currentTarget,
+                    r = n.response;
+                var buf = picab2buf(pics,r);
+                bufs.push(buf);
+                var fs = bufab2pic(buf);
+                var ff = fs.f[0];
+                console.log(fs);
+                var img = document.createElement("img");
+                img.onload = function(e){
+                    URL.revokeObjectURL(img.src);
+                };
+                img.src = URL.createObjectURL(new Blob([ff]));
+                document.body.appendChild(img);
+            }
+        };
+        xhr.send();
+        // while(m < picsDview.byteLength){
+        //     var d = picsDview.getUint32(m,!1);
+        //     console.log(String.fromCharCode(d));
+        //     m += 4;
+        // }
+    }
+    </script>
+</body>
+
+</html>

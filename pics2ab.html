@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blob图片保存</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+    var buffers = new ArrayBuffer(0);
+
+    // 合并 buffer
+    var _appendBuffer = function(buffer1, buffer2) {
+        var tmp = new Uint8Array(buffer1.byteLength + buffer2.byteLength);
+        tmp.set(new Uint8Array(buffer1), 0);
+        tmp.set(new Uint8Array(buffer2), buffer1.byteLength);
+        return tmp.buffer;
+    };
+
+    // 保存图片名称与数据，返回 arraybuffer
+    function pic2buf(pic){
+        var l = pic.length;
+        var g = window.URL || window.webkitURL || window;
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", pic, true);
+        xhr.responseType = "arraybuffer";
+        xhr.onload = function(t){
+            if (this.status == 200) {
+                var n = t.currentTarget,
+                    r = n.response,
+                    v = new Uint8Array(r),
+                    q = v.length,
+                    a = new ArrayBuffer(l * 4 + 4 + 4 + q),
+                    d = new DataView(a),
+                    t = d.byteLength;
+                var m = 0;
+                d.setUint32(0,l,!1);
+                m += 4;
+                for(var i = 0; i < l; i++){
+                    var c = pic.charCodeAt(i);
+                    d.setUint32(m,c,!1);
+                    m += 4;
+                }
+                d.setUint32(m,q,!1);
+                m += 4;
+                for(var j = 0; j < q; j++){
+                    d.setUint8(m,v[j],!1);
+                    m += 1;
+                }
+                buffers = _appendBuffer(buffers,a);
+            }
+        };
+        xhr.send();
+    }
+
+    var pics = ["images/head_kv/a1.png","images/head_kv/背景图.jpg","images/head_kv/background.jpg","images/head_kv/12.GIF","images/head_kv/23.jpg"];
+    for(var i = 0; i < pics.length; i++){
+        pic2buf(pics[i]);
+    }
+    setTimeout(function(){
+        var img = document.createElement("img");
+        img.onload = function(e){
+            URL.revokeObjectURL(img.src);
+        };
+        img.src = URL.createObjectURL(new Blob([buffers]));
+        document.body.appendChild(img);
+        console.log(buffers);
+    },2000);
+    </script>
+</body>
+
+</html>

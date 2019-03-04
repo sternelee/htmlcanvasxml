@@ -1,0 +1,42 @@
+<container name="wangfeng" width="580" height="671">
+  <asset>axe|assets/7.png</asset>
+  <container name="play_box" width="580" height="671">
+    <bitmap src="images/wangfeng/background.jpg"/>
+    <movie name="hu_movie" x="10" y="274" width="560" height="387" fps="20" loop="false">
+      <frame>images/wangfeng/hu/motion_[00000-00020].jpg</frame>
+    </movie>
+    <movie name="gf_movie" x="10" y="274" width="560" height="387" fps="20">
+      <frame>images/wangfeng/gf/motion_[00000-00060].png</frame>
+      <script frame="last" action="goToAndPlay:41"/>
+    </movie>
+    <button name="btn_back" x="446" y="216" width="134" height="48">
+      <motion name="normal" width="134" height="48" duration="0.5">
+        <layer>
+          <content>
+            <bitmap src="images/wangfeng/btn_back/normal.jpg"/>
+          </content>
+          <frame time="0" alpha="1.0" tween="Linear.easeNone"/>
+          <frame time="0.25" alpha="0.5" tween="Linear.easeNone"/>
+          <frame time="0.5" alpha="1.0"/>
+        </layer>
+      </motion>
+      <bitmap name="click" src="images/wangfeng/btn_back/click.jpg"/>
+    </button>
+  </container>
+  <container name="normal_box" width="580" height="671">
+    <bitmap src="images/wangfeng/action.jpg"/>
+    <button name="btn_start" x="96" y="352" width="389" height="237">
+      <motion name="normal" width="380" height="237" duration="0.5">
+        <layer>
+          <content>
+            <bitmap src="images/wangfeng/btn_start/normal.png"/>
+          </content>
+          <frame time="0" alpha="1.0" tween="Linear.easeNone"/>
+          <frame time="0.25" alpha="0.5" tween="Linear.easeNone"/>
+          <frame time="0.5" alpha="1.0"/>
+        </layer>
+      </motion>
+      <bitmap name="click" src="images/wangfeng/btn_start/click.png"/>
+    </button>
+  </container>
+</container>

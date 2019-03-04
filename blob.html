@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blob图片解析出来</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    window.onload = function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", "images/out.png", true);
+        xhr.responseType = "arraybuffer";
+        var bu = function(t) {
+            if (this.status == 200) {
+                var n = t.currentTarget,
+                    r = n.response,
+                    i = new DataView(r),
+                    s = 0,
+                    o = [],
+                    u = [],
+                    f = [];
+                while (s < i.byteLength) {
+                    var l = i.getUint32(s, !1);
+                    // console.log(l);
+                    // 路径名称 字节长度
+                    s += 4;
+                    var c = "";
+                    for (var h = 0; h < l; h++) {
+                        var p = i.getUint32(s, !1);
+                        s += 4,
+                            c += String.fromCharCode(p)
+                        
+                    }
+                    // 取得 路径名称字节 并转换成 字符串
+                    // console.log(c);
+                    var d = i.getUint32(s, !1);
+                    // 图像数据 字节长度
+                    s += 4;
+                    var v = new Uint8Array(r, s, d);
+                    // 取得图像数据 字节
+                    s += d,
+                        o.push(c),
+                        f.push(v)
+                }
+                var m = 0,
+                    g = window.URL || window.webkitURL || window,
+                    y = function() {
+                        if (m >= f.length)
+                            console.log('完成加载!');
+                        else {
+                            var t = f[m],
+                                n = document.createElement("img");
+                            n.onload = function(e) {
+                                try {
+                                    g.revokeObjectURL(e.currentTarget.src)
+                                } catch (t) {}
+                                u.push(n),
+                                    m += 1,
+                                    y()
+                            };
+                            try {
+                                n.src = g.createObjectURL(new Blob([t]));
+                                document.body.appendChild(n);
+
+                            } catch (r) {
+                                var i = o[m].substr(o[m].length - 3, 3).toLowerCase(),
+                                    s;
+                                i == "jpg" || i == "jpeg" ? s = "data:image/jpeg;base64," : i == "png" ? s = "data:image/png;base64," : i == "gif" && (s = "data:image/gif;base64,"),
+                                    n.src = s + a.fromByteArray(t)
+                            }
+                        }
+                    };
+                y();
+               }
+        };
+        xhr.onload = bu;
+        // var blob = this.response;
+        // var img = document.createElement("img");
+        //          img.onload = function(e) {
+        //            window.URL.revokeObjectURL(img.src); // 清除释放
+        //          };
+        //          img.src = window.URL.createObjectURL(blob);
+        //          document.body.appendChild(img);
+     
+        xhr.send();
+    }
+    </script>
+</body>
+
+</html>
