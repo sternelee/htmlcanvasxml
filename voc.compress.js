@@ -7610,6 +7610,7 @@ Back.easeIn = function(e, t, n, r) {
                             o = [],
                             u = [],
                             f = [];
+                            console.log(n, i)
                         while (s < i.byteLength) {
                             var l = i.getUint32(s, !1);
                             s += 4;
@@ -9948,10 +9949,6 @@ Back.easeIn = function(e, t, n, r) {
 
     // xml各节点实例化，并实现文档的事件操作end
 
-
-
-
-
     define("head_kv", ["kv_motion", "button_group", "event_center", "event", "system", "vec2", "movie", "audio_ctrl"], function(e, t, n, r, i, s, o, u) {
         var a = function(e, t, n, r, i, s, o) {
             var u = this;
@@ -10417,6 +10414,7 @@ Back.easeIn = function(e, t, n, r) {
             },
             s
     }),
+    // 底部实例化 
     define("section_bottom", ["section_cell", "bottom_kv"], function(e, t) {
         var n = function(t) {
             var n = this;
@@ -10430,12 +10428,8 @@ Back.easeIn = function(e, t, n, r) {
             },
             n
     }),
-    // 底部实例化 
 
     // stage舞台实例完
-
-
-
 
     require.config({
         paths: {

@@ -1,0 +1,27 @@
+{
+  "name": "htmlcanvasxml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sternelee/htmlcanvasxml.git"
+  },
+  "author": "sternelee@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sternelee/htmlcanvasxml/issues"
+  },
+  "homepage": "https://github.com/sternelee/htmlcanvasxml#readme",
+  "dependencies": {
+    "@types/jquery": "^3.3.38",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "typescript": "^3.9.5"
+  }
+}
